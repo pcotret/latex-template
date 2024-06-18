@@ -110,10 +110,10 @@
 
 \definecolor{iframeColor}{HTML}{009700}
 
-\definecolor{titlePageBackgroundColor}{HTML}{\iftoggle{nocolor}{FFFFFF}{094561}}
+\definecolor{titlePageBackgroundColor}{HTML}{\iftoggle{nocolor}{FFFFFF}{FFFFFF}}
 \definecolor{titlePageEditorColor}{HTML}{\iftoggle{nocolor}{000000}{F8AD32}}
-\definecolor{titlePageTextColor}{HTML}{\iftoggle{nocolor}{000000}{FFFFFF}}
-\definecolor{titlePageAuthorColor}{HTML}{\iftoggle{nocolor}{4D4D4D}{FF9400}}
+\definecolor{titlePageTextColor}{HTML}{\iftoggle{nocolor}{000000}{000000}}
+\definecolor{titlePageAuthorColor}{HTML}{\iftoggle{nocolor}{4D4D4D}{000000}}
 
 \definecolor{codeBackgroundColor}{HTML}{F7F7F7}
 \definecolor{highlightCodeColor}{HTML}{E3E3E3}
@@ -656,9 +656,9 @@
                &
             \vspace{0pt}
             \ifcsdef{@licence}{
-               \begin{minipage}[t]{0.3\textwidth}
-                  \hspace{\fill}\@licence
-               \end{minipage}
+               %\begin{minipage}[t]{0.3\textwidth}
+               %   \hspace{\fill}\@licence
+               %\end{minipage}
             }{}
          \end{tabular}
       \end{center}
@@ -676,19 +676,19 @@
       \vspace*{\fill}
    \end{center}
    \vspace*{2.1cm}
-   \begin{center}
-      \@titlePageLink{%
-         \begin{minipage}{0.5\textwidth}
-            \ifcsdef{@editorLogo}{%
-            \begin{center}
-               \includegraphics[max width=8cm, max height=2cm, keepaspectratio]{\@editorLogo} \\
-               \ifcsdef{@editorLogoSentence}{\color{alternativeTextColor} \@editorLogoSentence}{}
-            \end{center}
-            }{}
-            \normalcolor
-         \end{minipage}
-      }{https://zestedesavoir.com} \\
-   \end{center}
+   %\begin{center}
+   %   \@titlePageLink{%
+   %      \begin{minipage}{0.5\textwidth}
+   %         \ifcsdef{@editorLogo}{%
+   %         \begin{center}
+   %            \includegraphics[max width=8cm, max height=2cm, keepaspectratio]{\@editorLogo} \\
+   %            \ifcsdef{@editorLogoSentence}{\color{alternativeTextColor} \@editorLogoSentence}{}
+   %         \end{center}
+   %         }{}
+   %         \normalcolor
+   %      \end{minipage}
+   %   }{https://zestedesavoir.com} \\
+   %\end{center}
    \restoregeometry
    \newpage
    \newpagecolor{white}
