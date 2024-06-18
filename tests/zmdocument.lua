@@ -107,7 +107,7 @@ function createStrAuthors(all)
         display_name = ARRAY_AUTHORS[i].name
       end
       
-      tab[i] = "\\href{" .. AUTHOR_LINK .. ARRAY_AUTHORS[i].name .. "}{\\color{titlePageAuthorColor}{" .. display_name .. "}}\\\\"
+      tab[i] = display_name
    end
 
    local strAuthors = implode (",", tab)

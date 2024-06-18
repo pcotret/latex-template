@@ -636,10 +636,10 @@
 
 \renewcommand{\maketitle}{%
    \setcounter{page}{0}
-   \ifcsdef{@authorlink}{}{\authorlink{https://zestedesavoir.com/@}}
-   \ifcsdef{@website}{}{\website{https://zestedesavoir.com}}
-   \ifcsdef{@editor}{}{\editor{https://zestedesavoir.com}}
-   \ifcsdef{@logo}{}{\logo{default_logo.png}}
+   \ifcsdef{@authorlink}{}{\authorlink{}}
+   \ifcsdef{@website}{}{\website{}}
+   \ifcsdef{@editor}{}{\editor{}}
+   \ifcsdef{@logo}{}{\logo{test-images/default_logo.png}}
    \ifcsdef{@tutoLink}{}{\tutoLink{\@website}}
    \pagecolor{titlePageBackgroundColor}
    \color{titlePageTextColor}
@@ -656,9 +656,9 @@
                &
             \vspace{0pt}
             \ifcsdef{@licence}{
-               %\begin{minipage}[t]{0.3\textwidth}
-               %   \hspace{\fill}\@licence
-               %\end{minipage}
+               \begin{minipage}[t]{0.3\textwidth}
+                  \hspace{\fill}\@licence
+               \end{minipage}
             }{}
          \end{tabular}
       \end{center}
